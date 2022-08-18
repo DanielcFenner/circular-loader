@@ -100,5 +100,5 @@ svg {
   stroke-dasharray: 100;
   stroke-dashoffset: 99.9;
   stroke-linecap: round;
-  transition: all 60s ease-in-out
+  transition: all 30s ease-in-out
 }
