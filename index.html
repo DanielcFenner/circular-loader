@@ -6,10 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
+    <script src="Gradient.js"></script>
     <title>Document</title>
   </head>
   <body>
     <div class="container">
+      <canvas id="gradient-canvas" style="width: 100vw; height: 100vh"></canvas>
+      <script>
+        var gradient = new Gradient();
+        gradient.initGradient("#gradient-canvas");
+      </script>
       <div class="title">
         <p>DANIEL</p>
         <p>FENNER</p>
@@ -17,12 +23,13 @@
 
       <svg width="500" height="500" viewBox="0 0 120 120">
         <circle
+          class="behindCircle"
           cx="60"
           cy="60"
           r="54"
           fill="none"
           stroke="#0f1b2d"
-          stroke-width="6"
+          stroke-width="4"
         />
         <circle
           class="percent"
@@ -30,8 +37,8 @@
           cy="60"
           r="54"
           fill="none"
-          stroke="#0091ff"
-          stroke-width="6"
+          stroke="#eaf6ff"
+          stroke-width="4"
           pathLength="100"
         />
       </svg>

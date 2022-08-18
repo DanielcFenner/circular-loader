@@ -11,11 +11,13 @@
   --blue10: hsl(209, 100%, 60.6%);
   --blue11: hsl(210, 100%, 66.1%);
   --blue12: hsl(206, 98%, 95.8%);
-  font-family: sans-serif;
+  font-family: Inter;
 }
 
 html,
 body {
+    margin: 0;
+    padding: 0;
   height: 100%;
   background-color: var(--blue1);
 }
@@ -26,18 +28,41 @@ h1 {
 }
 
 .title {
-    margin-top: 6rem;
+    margin-top: 7.5rem;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     position: absolute;
     color: var(--blue12);
     text-align: center;
-    font-size: 48px;
+    font-size: 57px;
+}
+
+const blueDark = {
+    blue1: '#0f1720',
+    blue2: '#0f1b2d',
+    blue3: '#10243e',
+    blue4: '#102a4c',
+    blue5: '#0f3058',
+    blue6: '#0d3868',
+    blue7: '#0a4481',
+    blue8: '#0954a5',
+    blue9: '#0091ff',
+    blue10: '#369eff',
+    blue11: '#52a9ff',
+    blue12: '#eaf6ff',
+  }
+
+#gradient-canvas {
+    position: absolute;
+    --gradient-color-1: #0f1720;
+    --gradient-color-2: #0f1b2d;
+    --gradient-color-3: #10243e;
+    --gradient-color-4: #102a4c;
 }
 
 .title p {
-    margin-top: -3rem;
+    margin-top: -4.8rem;
 }
 
 .container {
@@ -50,6 +75,10 @@ h1 {
 
 svg {
   transform: rotate(-90deg);
+}
+
+.behindCircle {
+    opacity: 20%;
 }
 
 .percent {
