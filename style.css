@@ -1,0 +1,75 @@
+:root {
+  --blue1: hsl(212, 35%, 9.2%);
+  --blue2: hsl(216, 50%, 11.8%);
+  --blue3: hsl(214, 59.4%, 15.3%);
+  --blue4: hsl(214, 65.8%, 17.9%);
+  --blue5: hsl(213, 71.2%, 20.2%);
+  --blue6: hsl(212, 77.4%, 23.1%);
+  --blue7: hsl(211, 85.1%, 27.4%);
+  --blue8: hsl(211, 89.7%, 34.1%);
+  --blue9: hsl(206, 100%, 50%);
+  --blue10: hsl(209, 100%, 60.6%);
+  --blue11: hsl(210, 100%, 66.1%);
+  --blue12: hsl(206, 98%, 95.8%);
+  font-family: sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--blue1);
+}
+
+h1 {
+    position: absolute;
+    color: var(--blue12);
+}
+
+.title {
+    margin-top: 6rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color: var(--blue12);
+    text-align: center;
+    font-size: 48px;
+}
+
+.title p {
+    margin-top: -3rem;
+}
+
+.container {
+    position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+svg {
+  transform: rotate(-90deg);
+}
+
+.percent {
+  stroke-dasharray: 100;
+  stroke-dashoffset: 99;
+  stroke-linecap: round;
+  transition: all 1s ease-in-out;
+}
+
+const blueDark = {
+    blue1: '#0f1720',
+    blue2: '#0f1b2d',
+    blue3: '#10243e',
+    blue4: '#102a4c',
+    blue5: '#0f3058',
+    blue6: '#0d3868',
+    blue7: '#0a4481',
+    blue8: '#0954a5',
+    blue9: '#0091ff',
+    blue10: '#369eff',
+    blue11: '#52a9ff',
+    blue12: '#eaf6ff',
+  }
